@@ -1,0 +1,66 @@
+const NumberPad = ({number, setNumber}) => {  
+    return (
+      <div className="number-pad">
+        <div>
+          <button 
+            onClick={()=>{
+              setNumber(number+"1")
+            }}
+            className="button-number">1</button>
+          <button 
+            onClick={()=>{
+              setNumber(number+"2")
+            }}
+            className="button-number">2</button>
+          <button 
+            onClick={()=>{
+              setNumber(number+"3")
+            }}
+            className="button-number">3</button>
+        </div>
+        <div>
+          <button 
+            onClick={()=>{
+              setNumber(number+"4")
+            }}
+            className="button-number">4</button>
+          <button 
+            onClick={()=>{
+              setNumber(number+"5")
+            }}
+            className="button-number">5</button>
+          <button 
+            onClick={()=>{
+              setNumber(number+"6")
+            }}
+            className="button-number">6</button>
+        </div>
+        <div>
+          <button
+            onClick={()=>{
+              setNumber(number+"7")
+            }} 
+            className="button-number">7</button>
+          <button 
+            onClick={()=>{
+              setNumber(number+"8")
+            }}
+            className="button-number">8</button>
+          <button 
+            onClick={()=>{
+              setNumber(number+"9")
+            }}
+            className="button-number">9</button>
+        </div>
+        <div>
+          <button 
+            onClick={()=>{
+              setNumber(number+"0")
+            }}
+            className="button-number">0</button>
+        </div>
+      </div>
+    )
+  }
+
+  export default NumberPad
